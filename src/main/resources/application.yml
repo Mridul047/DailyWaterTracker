@@ -1,0 +1,25 @@
+logging:
+    level:
+      root: TRACE
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/health?allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: mysql@123
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+twilio:
+  account_sid: AC1e48527b51ab9ec54f3b61857bb8b88a
+  auth_token: 3654c9db0404e44b250de80e1be7b6a9
+  trail_number: +14155238886
+  #+16562231113
+
